@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+use App\Http\Controllers\BoxController;
+
+Route::get('/', [BoxController::class, 'showBoxes'])->name('home');
+Route::get('/open-box/{boxId}', [BoxController::class, 'revealPrize'])->name('open-box');
