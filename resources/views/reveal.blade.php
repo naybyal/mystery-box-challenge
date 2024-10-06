@@ -10,40 +10,40 @@
             font-family: 'Arial', sans-serif;
             text-align: center;
             padding: 50px;
-            background-color: #121212; /* Dark background */
-            color: #ffffff; /* White text */
+            background-color: #121212; 
+            color: #ffffff; 
             margin: 0;
-            height: 100vh; /* Full viewport height */
-            display: flex; /* Center the content */
-            flex-direction: column; /* Vertical alignment */
-            justify-content: center; /* Center vertically */
-            align-items: center; /* Center horizontally */
+            height: 100vh; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
         }
         h1 {
             font-size: 2.5em;
             margin-bottom: 40px;
-            color: #00bcd4; /* Teal color */
-            text-shadow: 0 0 10px rgba(0, 188, 212, 0.7); /* Teal glow */
+            color: #00bcd4; 
+            text-shadow: 0 0 10px rgba(0, 188, 212, 0.7);
         }
         .prize {
             font-size: 40px;
-            color: #ff9900; /* Prize color */
+            color: #ff9900; 
             margin: 20px;
-            text-shadow: 0 0 10px rgba(255, 153, 0, 0.7); /* Orange glow */
+            text-shadow: 0 0 10px rgba(255, 153, 0, 0.7); 
         }
         a {
             font-size: 1.5em;
-            color: #00bcd4; /* Teal link color */
-            text-decoration: none; /* Remove underline */
+            color: #00bcd4; 
+            text-decoration: none; 
             margin-top: 20px;
             padding: 10px 20px;
-            border: 2px solid #00bcd4; /* Teal border */
-            border-radius: 5px; /* Rounded corners */
-            transition: background-color 0.3s, color 0.3s; /* Animation for hover */
+            border: 2px solid #00bcd4; 
+            border-radius: 5px; 
+            transition: background-color 0.3s, color 0.3s; 
         }
         a:hover {
-            background-color: #00bcd4; /* Teal background on hover */
-            color: #121212; /* Dark text on hover */
+            background-color: #00bcd4; 
+            color: #121212; 
         }
     </style>
 </head>
@@ -57,16 +57,16 @@
 
     <script>
         function launchConfetti(event) {
-            event.preventDefault(); // Prevent the default anchor action
+            event.preventDefault(); 
             confetti({
                 particleCount: 100,
                 spread: 70,
-                origin: { y: 0.6 }, // Adjust origin for effect
+                origin: { y: 0.6 }, 
                 colors: ['#bb0000', '#ffffff', '#00bcd4']
             });
             setTimeout(() => {
-                window.location.href = event.currentTarget.href; // Navigate after confetti
-            }, 3000); // Delay navigation to allow confetti to fall
+                window.location.href = event.currentTarget.href; 
+            }, 3000); 
         }
     </script>
 </body>
