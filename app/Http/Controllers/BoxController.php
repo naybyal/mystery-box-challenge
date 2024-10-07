@@ -14,7 +14,7 @@ class BoxController extends Controller {
             '🍫 A Dark Chocolate Bar!', 
             '🚗 A Porsche 911 GT3 RS', 
             '🤡 ഒലക്ക!', 
-            '🌟 A Star!'
+            '📚 A WinRAR Subscription!'
         ];
 
         $prize = $prizes[array_rand($prizes)];
