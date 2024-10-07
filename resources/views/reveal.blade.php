@@ -54,7 +54,7 @@
 
     <a href="{{ route('home') }}" onclick="launchConfetti(event)">Celebrate!</a>
     <a href="{{ route('home') }}">Play Again!</a>
-
+    
     <script>
         function launchConfetti(event) {
             event.preventDefault(); 
